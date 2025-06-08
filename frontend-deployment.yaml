@@ -29,7 +29,7 @@ spec:
             - containerPort: 3000
               protocol: TCP
           volumeMounts:
-            - mountPath: /app
+            - mountPath: /app/config
               name: frontend-cm0
       restartPolicy: Always
       volumes:
