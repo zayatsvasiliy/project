@@ -40,7 +40,7 @@ spec:
             - containerPort: 5000
               protocol: TCP
           volumeMounts:
-            - mountPath: /app
+            - mountPath: /config
               name: api-cm0
       restartPolicy: Always
       volumes:
