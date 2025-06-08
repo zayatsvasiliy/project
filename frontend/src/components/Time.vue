@@ -49,7 +49,7 @@ export default {
   },
   async created() {
     try {
-      const res = await fetch('http://api:5555/times')
+      const res = await fetch('http://localhost:5555/times')
       const json = await res.json()
       if (json.length) {
         this.savedTimes = json
