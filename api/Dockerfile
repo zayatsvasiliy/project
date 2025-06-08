@@ -3,15 +3,14 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Копируем зависимости
-COPY package.json ./
-# Если есть — тоже добавь:
-COPY package-lock.json ./
+COPY package* ./
+
 
 # Устанавливаем зависимости
 RUN npm install
 RUN npm install -g nodemon
 # Копируем остальной код
-COPY . .
+COPY . ./
 
 # Запускаем приложение
 CMD ["npm", "run", "dev"]
