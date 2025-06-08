@@ -69,7 +69,7 @@ export default {
       placeholder="Введите значение"
       class="input-time"
     />
-    <button @click="saveTime">Сохранить в БД</button>
+    <button @click="saveTime">Сохранить в БД1</button>
 
     <h3 v-if="savedTimes.length && showSavedTimes">Сохранённые значения</h3>
 
