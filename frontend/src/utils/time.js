@@ -1,5 +1,5 @@
 export async function saveTime(time) {
-  const res = await fetch('http://localhost:5555/times', {
+  const res = await fetch('http://api:5555/times', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ time }),
@@ -8,7 +8,7 @@ export async function saveTime(time) {
 }
 
 export async function deleteTime(id) {
-  const res = await fetch(`http://localhost:5555/time/${id}`, {
+  const res = await fetch(`http://api:5555/time/${id}`, {
     method: 'DELETE',
   })
   return res.json()
